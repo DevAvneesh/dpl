@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DPL - Dumra Premier League</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #1f4037, #99f2c8);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #444;
+    }
+
+    .hero {
+      background: url('https://img.freepik.com/free-photo/cricket-bat-gloves-ball-grass_123827-27765.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      margin: 30px 0;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .section h2 {
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+
+    .section ul li {
+      margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DPL - Dumra Premier League</h1>
+    <p>स्थान: डुमरा, बेलसंड, सीतामढ़ी | शुभारंभ: 05 मई, प्रातः 09 बजे</p>
+  </header>
+
+  <nav>
+    <a href="#rules">नियम</a>
+    <a href="#rewards">पुरस्कार</a>
+    <a href="#teams">टीमें</a>
+    <a href="#committee">आयोजक</a>
+    <a href="#gallery">गैलरी</a>
+  </nav>
+
+  <div class="hero">
+    ⚔️ आठ टीमों का महामुकाबला शुरू होने वाला है!
+  </div>
+
+  <div class="container">
+    <div class="section" id="rules">
+      <h2>🏏 टूर्नामेंट नियम</h2>
+      <ul>
+        <li>8 टीमें दो ग्रुप में, हर टीम 3 मैच खेलेगी।</li>
+        <li>1 जीत पर 2 अंक, टाई में रन रेट पर फैसला।</li>
+        <li>अम्पायर और समिति का निर्णय अंतिम होगा।</li>
+        <li>सभी मैच टेनिस बॉल से होंगे।</li>
+        <li>1 बॉलर अधिकतम 4 ओवर डाल सकता है।</li>
+        <li>लीग: 14 ओवर | सेमीफाइनल: 16 ओवर | फाइनल: 20 ओवर</li>
+        <li>विवाद करने पर टीम बाहर कर दी जायेगी।</li>
+      </ul>
+    </div>
+
+    <div class="section" id="rewards">
+      <h2>🎁 पुरस्कार</h2>
+      <ul>
+        <li>🏆 प्रथम पुरस्कार: ₹15001 + ट्रॉफी</li>
+        <li>🥈 द्वितीय पुरस्कार: ₹10001 + ट्रॉफी</li>
+        <li>🎖️ मैन ऑफ द सीरीज: कीपैड फोन</li>
+        <li>💥 हैट्रिक (सिक्स/विकेट): ₹251</li>
+        <li>🏅 बेस्ट बैट्समैन, बॉलर, फील्डर: मेडल</li>
+        <li>👥 बेस्ट दर्शक: ₹51</li>
+        <li>🔐 प्रवेश शुल्क: ₹7101</li>
+      </ul>
+    </div>
+
+    <div class="section" id="teams">
+      <h2>👥 टीमें</h2>
+      <div class="grid">
+        <div class="card"><img src="https://img.freepik.com/free-vector/cricket-logo-badge-vector_53876-112574.jpg" alt="Team 1"><p>डुमरा वारियर्स</p></div>
+        <div class="card"><img src="https://img.freepik.com/premium-vector/cricket-battle-batsman-player-sport_109722-1170.jpg" alt="Team 2"><p>बेलसंड ब्लास्टर्स</p></div>
+        <div class="card"><img src="https://img.freepik.com/free-vector/cricket-logo-design_1117-154.jpg" alt="Team 3"><p>सीतामढ़ी सुपरकिंग्स</p></div>
+        <div class="card"><img src="https://img.freepik.com/free-vector/cricket-tournament-modern-sport-banner_1017-36674.jpg" alt="Team 4"><p>विकास वॉरियर्स</p></div>
+        <div class="card"><img src="https://img.freepik.com/premium-vector/cricket-match-logo-batsman-pose_667520-252.jpg" alt="Team 5"><p>किंग्स इलेवन डुमरा</p></div>
+        <div class="card"><img src="https://img.freepik.com/free-vector/cricket-championship-modern-banner_1017-37895.jpg" alt="Team 6"><p>सुपर स्टार्स बेलसंड</p></div>
+        <div class="card"><img src="https://img.freepik.com/free-vector/cricket-championship-logo-template_225004-1153.jpg" alt="Team 7"><p>धमाका राइडर्स</p></div>
+        <div class="card"><img src="https://img.freepik.com/premium-vector/cricket-logo-badge-design_29937-114.jpg" alt="Team 8"><p>ब्लू फायर XI</p></div>
+      </div>
+    </div>
+
+    <div class="section" id="committee">
+      <h2>👨‍💼 आयोजक समिति</h2>
+      <p><strong>अध्यक्ष/कोषाध्यक्ष/सचिव:</strong></p>
+      <ul>
+        <li>वरुण सिंह (शिक्षक) – 📞 6203326637</li>
+        <li>चुन्नू सिंह – 📞 9682174518</li>
+        <li>नवीन सिंह – 📞 8789473041</li>
+      </ul>
+      <p><strong>व्यवस्थापक:</strong> धर्मेन्द्र सिंह, संत जी, बाबुल सिंह, कृष्णानन्दन, केतन, शिवम्, सुजल, सत्यम, अनुभव</p>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>📸 गैलरी</h2>
+      <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1607697603295-59f00f04f5f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Match Scene"></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1620193664585-97b950f2c0b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Team Celebration"></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1579656592043-cb039a58aa29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Cricket Audience"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2025 Dumra Premier League (DPL) | Designed by Avneesh
+  </footer>
+</body>
+
+</html>
